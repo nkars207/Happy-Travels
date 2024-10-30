@@ -1,0 +1,297 @@
+/* Genel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 20px;
+}
+
+/* Header'ın genel düzeni */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Sol kısım: Başlık ve iletişim */
+.header-left {
+    text-align: left;
+}
+
+.header-left h1 {
+    font-size: 24px;
+    color: red;
+}
+
+.header-left p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Sağ kısım: Butonlar */
+.header-right {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Tatil temaları */
+.resim-bolgesi {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.resim-bolgesi h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.resim-galeri {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 sütun */
+    gap: 0px; /* Aradaki boşlukları sıfırlıyoruz */
+    justify-items: center; /* Her bir öğeyi ortalar */
+    margin: 0;
+}
+
+.resim-item {
+    max-width: 150px; /* Resimlerin genişliğini sabitliyoruz */
+    text-align: center;
+    margin: 0; /* Aradaki boşlukları sıfırlıyoruz */
+}
+
+.resim-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hafif gölge efekti */
+}
+
+.resim-item h3 {
+    font-size: 16px;
+    color: #615e5e;
+    margin-top: 5px; /* Başlık ile resim arasına biraz boşluk bırakıyoruz */
+}
+
+
+
+
+
+
+
+/* Yeni başlık ve resimler için stil ayarları */
+.otel-resimler {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.otel-resimler h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.resim-galeri {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.otel-item {
+    position: relative;
+    flex: 1 1 calc(50% - 20px); /* 2 yan yana resim */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.resim-item img {
+    width: 100%;
+    height: auto;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.resim-ust {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.resim-baslik {
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.ekstra-basliklar {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    z-index: 1;
+}
+
+.resim-item:hover .ekstra-basliklar {
+    display: block; /* Hover efekti ile ekstra başlıklar görünür */
+}
+
+.ekstra-basliklar p {
+    margin: 5px 0;
+    font-size: 12px;
+    color: #333;
+}
+
+
+/* Otel Resimleri */
+.otel-resimler {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.otel-resimler h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.resim-galeri {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Resimler arasındaki boşluk */
+    flex-wrap: wrap;
+}
+
+.otel-item {
+    flex: 1 1 calc(50% - 20px); /* 2 yan yana resim, her biri %50 genişlikte */
+    text-align: center;
+    max-width: 100%;
+    position: relative;
+    margin-bottom: 20px; /* Araya biraz boşluk bırakıyoruz */
+}
+
+/* Resimler */
+.otel-item img {
+    width: 80%;
+    height: auto;
+    max-width: 100%; /* Resmin genişliğini tam olarak kullanıyoruz */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Gölgeleme efekti */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+/* Resmin içinde başlık */
+.resim-icerik {
+    position: absolute;
+    top: 50%; /* Resmin ortasına yerleştiriyoruz */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.resim-item-baslik {
+    font-size: 18px; /* Başlık boyutunu biraz küçültüyoruz */
+    font-weight: bold;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6); /* Başlık arka planı */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Alt başlıkların görünmesi için hover efekti */
+.ekstra-basliklar {
+    display: none;
+    position: absolute;
+    bottom: 20px; /* Resmin alt kısmında */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Gölge içinde metin */
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.otel-item:hover .ekstra-basliklar {
+    display: block; /* Hover ile ekstra başlıklar görünür hale gelir */
+}
+
+.ekstra-basliklar p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: white; /* Başlıkların beyaz olması */
+}
+
+/* Resmin üzerine gelince efekt */
+.otel-item:hover img {
+    filter: brightness(80%); /* Resme koyu renkli gölgelendirme efekti */
+}
+
+/* Responsive tasarım için ayarlamalar */
+@media (max-width: 768px) {
+    .otel-item {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+.otels-link {
+    text-decoration: none;
+    color: red; /* Başlık rengi */
+}
+
+.reservation-info {
+    display: inline-block;
+    padding: 5px;
+}
+
+.click-text {
+    background-color: blue; /* Arka plan rengi */
+    color: white; /* Yazı rengi */
+    padding: 3px; /* İç boşluk */
+    display: inline; /* Metin ve resim aynı satırda */
+}
+
+.icon {
+    width: 20px; /* Resim genişliği */
+    height: 20px; /* Resim yüksekliği */
+    vertical-align: middle; /* Yazı ile hizalama */
+    margin-left: 5px; /* Resim ile metin arasında boşluk */
+}
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatil</title>
+    <link rel="stylesheet" href="kampanyalar.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <h1>HAPPY TRAVELS</h1>
+            </a>
+            <h2 class="campaigns-title">
+                <a href="kampanyalar.html" style="text-decoration: none; color: red;">KAMPANYALAR</a>
+                <div class="heart" onclick="window.location.href='favoriler.html'">🤍</div> <!-- Kalp sembolü favori sayfasına yönlendirir -->
+            </h2>
+            <p>444 16 16</p>
+        </div>
+        <div class="header-right">
+            <a href="tur.html"><button class="button">Tur</button></a>
+            <a href="otel.html"><button class="button">Otel</button></a>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <div class="image-container" onclick="openModal(this)">
+            <img src="BankkartKampanya-2-1170x470-0306.jpg" alt="Resim 1">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="BankkartKampanya-1170x470-0104.jpg" alt="Resim 2">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="Kibris-UcakKampanya-2024-0810.jpg" alt="Resim 3">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="TOURISTICA_ARA_KAMPANYA_1110.webp" alt="Resim 4">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="Pgs-Bolpuan-kampanya-2024-1110.jpg" alt="Resim 5">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="YD-EB2025-1170x470.jpg" alt="Resim 6">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="YD-PrimeTurlar-1-1170x470.jpg" alt="Resim 7">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="SeciliOtellerde-1170x470-0810 (1).jpg" alt="Resim 8">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="KasimAraTatil-165x140-202410111858166.jpg" alt="Resim 9">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="YD-3000TL-1170x470-0810.jpg" alt="Resim 10">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="1YDBenzersizFirsat-1170x470.jpg" alt="Resim 11">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="1ThermalOteller-1170x470.jpg" alt="Resim 12">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="Kultur-TUR1000-1170x470-2 (1).jpg" alt="Resim 13">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="YeniUyelere-1000-1170x470-0810.jpg" alt="Resim 14">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="1 GeceBizden-1170x470-0810.jpg" alt="Resim 15">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+        <div class="image-container" onclick="openModal(this)">
+            <img src="25Kampanya-1170x470-0810.jpg" alt="Resim 16">
+            <div class="overlay">➜</div>
+            <div class="heart" onclick="toggleFavorite(this)">🤍</div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <button id="scrollToTop">↑</button>
+
+    <script src="kampanyalar.js"></script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatil</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <h1>HAPPY TRAVELS</h1>
+            </a>
+            <h2 class="campaigns-title">
+                <a href="kampanyalar.html" style="text-decoration: none; color: red;">KAMPANYALAR</a>
+            </h2>
+            <p>444 16 16</p>
+        </div>
+        <div class="header-right">
+            <a href="tur.html"><button class="button">Tur</button></a>
+            <a href="otel.html"><button class="button">Otel</button></a>
+        </div>
+    </header>
+
+    <div class="special-offer">
+        <p>
+            Üyelere Özel Ekstra 1.000 TL İndirim!<br>
+            Web'e Özel 25.000 TL ve üzeri tüm siparişlerinizde geçerli kupon kodu: <strong>UYE1000</strong>
+        </p>
+    </div>
+
+
+    <section class="form-section">
+        <div class="form-content">
+            <!-- Üye Ol Başlığı -->
+            <h2 class="form-heading">Üye Ol</h2>
+
+            <!-- Adınız ve Soyadınız -->
+            <div class="name-form">
+                <input type="text" id="first-name" class="name-input" placeholder="Adınız" required>
+                <input type="text" id="last-name" class="name-input" placeholder="Soyadınız" required>
+            </div>
+
+            <!-- E-posta ve Telefon -->
+            <div class="contact-form">
+                <input type="email" id="signup-email" class="email-input" placeholder="E-posta adresinizi girin" required>
+                <input type="tel" id="phone" class="phone-input" placeholder="Telefon Numaranız" required>
+            </div>
+
+            <!-- Parola ve Parola Tekrarı -->
+            <div class="password-form">
+                <input type="password" id="signup-password" class="password-input" placeholder="Parola" required>
+                <input type="password" id="confirm-password" class="password-input" placeholder="Parola Tekrarı" required>
+            </div>
+
+            <!-- Onay Metinleri -->
+            <div class="terms">
+                <label>
+                    <input type="checkbox" id="accept-terms" required>
+                    Kullanım Şartları ve Gizlilik Bildirimini kabul ediyorum.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="personal-data">
+                    Kişisel Verilerin Korunması ve Gizlilik Politikası'nı okudum.<br>
+                </label>
+                <label>
+                    <input type="checkbox" id="receive-offers">
+                    Fırsatlar ve Kampanyalardan haberdar olmak istiyorum.<br>
+                </label>
+            </div>
+
+            <!-- Üye Ol Butonu -->
+            <div class="button-section">
+                <button class="action-button" id="signup-submit">Üye Ol</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="form-section">
+        <div class="form-content">
+            <!-- Paragraf -->
+            <p class="form-paragraph">Happy Travels E-Bültene üye olun, indirim ve fırsatlardan ilk sizin haberiniz olsun!</p>
+    
+            <!-- E-posta giriş alanı ve Gönder butonu -->
+            <div class="email-form">
+                <input type="email" id="email" class="email-input" placeholder="E-posta adresinizi girin" required>
+                <button class="submit-button" id="submit-email">Gönder</button>
+            </div>
+    
+            <!-- Onay metni -->
+            <div class="terms">
+                <label>
+                    <input type="checkbox" id="accept-terms" required>
+                    E-Posta ve SMS yoluyla kampanyalardan haberdar olmak istiyorum.<br>
+                    <span class="terms-text">Genel İlkeleri ve Üyelik Sözleşmesini okudum ve onaylıyorum.</span>
+                </label>
+            </div>
+    
+            <!-- Görsel ve metin -->
+            <div class="image-paragraph">
+                <img src="footer-login.jpg" alt="Resim" class="small-image">
+                <p class="image-paragraph-text">
+                    Üye Olun Fırsatları Kaçırmayın! <br>
+                    Üye girişi yapmanız çok daha fazla fırsat görmenizi sağlayacaktır.
+                </p>
+            </div>
+    
+            <!-- Butonlar -->
+            <div class="button-section">
+                <a href="login.html" class="action-button" id="login-button">Giriş Yap</a>
+                <a href="signup.html" class="action-button" id="signup-button">Üye Ol</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="signup.js"></script>
+
+</body>

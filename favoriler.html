@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoriler</title>
+    <link rel="stylesheet" href="kampanyalar.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <h1>HAPPY TRAVELS</h1>
+            </a>
+            <h2 class="campaigns-title">
+                <a href="kampanyalar.html" style="text-decoration: none; color: red;">KAMPANYALAR</a>
+            </h2>
+            <p>444 16 16</p>
+        </div>
+        <div class="header-right">
+            <a href="tur.html"><button class="button">Tur</button></a>
+            <a href="otel.html"><button class="button">Otel</button></a>
+        </div>
+    </header>
+
+    <h2>Favori Kampanyalarım</h2>
+    <div class="gallery" id="favoriteGallery">
+        <!-- Favori resimleri buraya dinamik olarak eklenecek -->
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal" onclick="closeModal()">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="caption"></div>
+    </div>
+
+    <button id="scrollToTop">↑</button>
+
+    <script src="favoriler.js"></script>
+</body>
+</html>

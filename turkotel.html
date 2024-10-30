@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatil</title>
+    <link rel="stylesheet" href="turkotel.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="index.html">
+                <h1>HAPPY TRAVELS</h1>
+            </a>
+            <h2 class="campaigns-title">
+                <a href="kampanyalar.html" style="text-decoration: none; color: red;">KAMPANYALAR</a>
+            </h2>
+            <p>444 16 16</p>
+        </div>
+        <div class="header-right">
+            <a href="tur.html"><button class="button">Tur</button></a>
+            <a href="otel.html"><button class="button">Otel</button></a>
+        </div>
+    </header>
+
+
+    <section class="filtre-bolgesi">
+        <label for="fiyat">Fiyat Aralığı:</label>
+        <input type="number" id="minFiyat" placeholder="Min Fiyat">
+        <input type="number" id="maxFiyat" placeholder="Max Fiyat">
+    
+        <label for="bolge">Bölge:</label>
+        <select id="bolge">
+            <option value="">Hepsi</option>
+            <option value="bodrum">Bodrum</option>
+            <option value="belek">Belek</option>
+            <option value="lara">Lara</option>
+            <option value="alanya">Alanya</option>
+            <option value="kemer">Kemer</option>
+            <option value="marmaris">Marmaris</option>
+            <option value="fethiye">Fethiye</option>
+        </select>
+    
+        <label for="konaklama">Konaklama Tipi:</label>
+        <select id="konaklama">
+            <option value="">Hepsi</option>
+            <option value="her_sey_dahil">Her Şey Dahil</option>
+            <option value="oda_kahvalti">Oda Kahvaltı</option>
+            <option value="ultra_her_sey_dahil">Ultra Her Şey Dahil</option>
+            <option value="yarim_pansiyon">Yarım Pansiyon</option>
+            <option value="tam_pansiyon">Tam Pansiyon</option>
+        </select>
+    
+        <button id="filtrele">Filtrele</button>
+        <button id="temizle">Seçimleri Temizle</button> <!-- Yeni buton -->
+    </section>
+    
+
+    <section class="resim-bolgesi">
+        <h2>Otel Bilgileri</h2>
+        <div class="resim-galeri" id="otelGaleri">
+            <!-- Otel itemleri buraya gelecek -->
+        </div>
+    </section>
+
+    <section class="resim-bolgesi">
+        <h2>Otel Fırsatları</h2>
+        <div class="resim-galeri" id="otelGaleri">
+            <!-- Otel itemleri buraya gelecek -->
+        </div>
+    </section>
+
+    <section class="resim-bolgesi">
+        <h2>Türkiye'nin en iyi tesislerinde kısa bir süre için satışa sunulan Son Dakika Tatil Fırsatları, kaçırılmayacak indirimler sunuyor. <br>
+            Hızlı davranın, en avantajlı tatil fırsatlarını yakalayın!</h2>
+        <div class="resim-galeri">
+            <div class="otel-item">
+                <img src="bodrum-1.webp" alt="Otel 1">
+                <p>Bodrum Otelleri (55 Otel)</p>
+                <p>700 TL'den başlayan fiyatlarla</p>
+            </div>
+            <div class="otel-item">
+                <img src="belek-1.webp" alt="Otel 2">
+                <p>Belek Otelleri (18 Otel)</p>
+                <p>2100 TL'den başlayan fiyatlarla</p>
+            </div>
+            <div class="otel-item">
+                <img src="lara-1.webp" alt="Otel 3">
+                <p>Lara Kundu Otelleri (7 Otel)</p>
+                <p>5960 TL'den başlayan fiyatlarla</p>
+            </div>
+            <div class="otel-item">
+                <img src="marmaris-1.webp" alt="Otel 4">
+                <p>Kemer Otelleri (19 Otel)</p>
+                <p>1200 TL'den başlayan fiyatlarla</p>
+            </div>
+            <div class="otel-item">
+                <img src="alanya-1.webp" alt="Otel 5">
+                <p>Alanya Otelleri (39 Otel)</p>
+                <p>980 TL'den başlayan fiyatlarla</p>
+            </div>
+            <div class="otel-item">
+                <img src="side-1.webp" alt="Otel 6">
+                <p>Side Otelleri (40 Otel)</p>
+                <p>1680 TL'den başlayan fiyatlarla</p>
+            </div>
+            <div class="otel-item">
+                <img src="marmaris-1.webp" alt="Otel 7">
+                <p>Marmaris Otelleri (18 Otel)</p>
+                <p>1620 TL'den başlayan fiyatlarla</p>
+            </div>
+            <div class="otel-item">
+                <img src="fethiye-1.webp" alt="Otel 8">
+                <p>Fethiye Otelleri (26 Otel)</p>
+                <p>1700 TL'den başlayan fiyatlarla</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="form-section">
+        <div class="form-content">
+            <p class="form-paragraph">Happy Travels E-Bültene üye olun, indirim ve fırsatlardan ilk sizin haberiniz olsun!</p>
+        
+            <div class="email-form">
+                <input type="email" id="email" class="email-input" placeholder="E-posta adresinizi girin" required>
+                <button class="submit-button" id="submit-email">Gönder</button>
+            </div>
+        
+            <div class="terms">
+                <label>
+                    <input type="checkbox" id="accept-terms" required>
+                    E-Posta ve SMS yoluyla kampanyalardan haberdar olmak istiyorum.<br>
+                    <span class="terms-text">Genel İlkeleri ve Üyelik Sözleşmesini okudum ve onaylıyorum.</span>
+                </label>
+            </div>
+        
+            <div class="image-paragraph">
+                <img src="footer-login.jpg" alt="Resim" class="small-image">
+                <p class="image-paragraph-text">
+                    Üye Olun Fırsatları Kaçırmayın! <br>
+                    Üye girişi yapmanız çok daha fazla fırsat görmenizi sağlayacaktır.
+                </p>
+            </div>
+        
+            <div class="button-section">
+                <a href="login.html" class="action-button" id="login-button">Giriş Yap</a>
+                <a href="signup.html" class="action-button" id="signup-button">Üye Ol</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="turkotel.js"></script>
+    
+
+    
+</body>
+</html>

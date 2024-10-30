@@ -1,0 +1,125 @@
+/* Genel stil ayarları */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 20px;
+}
+
+/* Header'ın genel düzeni */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #ccc;
+}
+
+/* Sol kısım: Başlık ve iletişim */
+.header-left {
+    text-align: left;
+}
+
+.header-left h1 {
+    font-size: 24px;
+    color: red;
+}
+
+.header-left p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Sağ kısım: Butonlar */
+.header-right {
+    display: flex;
+    gap: 15px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Başlık */
+.login-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* E-posta ve Şifre input alanları */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Giriş yap butonu */
+.action-button {
+    background-color: #0f5c50; /* Buton rengi */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.action-button:hover {
+    background-color: #0c4a42; /* Buton hover rengi */
+}
+
+/* Alt paragraf ve link */
+p {
+    margin-top: 20px;
+}
+
+a {
+    color: #0f5c50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
